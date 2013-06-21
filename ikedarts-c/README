@@ -1,0 +1,10 @@
+ikedarts: a simple C api for darts
+================================
+
+### buildtime dependencies: 
+* darts.h
+* on debian, apt-get install darts
+
+### runtime dependencies:
+* mkdarts to build the index
+* on debian, apt-get install darts
