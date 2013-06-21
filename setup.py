@@ -20,8 +20,11 @@ setup(
     packages=['ikedarts'],
 
     license = "LGPL",
-    description = "python wrapper for darts",
-    long_description=file('README.rst').read(),
+    description = "Python interface to DARTS by Kudo Taku.",
+    long_description="""
+see http://chasen.org/~taku/software/darts/ for detaisl for darts.
+see test for usage: ikedarts/tests/test.py
+""",
     author = "tengu",
     author_email = "karasuyamatengu@gmail.com",
     url = "https://github.com/tengu/ikedarts",
