@@ -7,7 +7,7 @@ except ImportError:
 
 setup(
     name='ikedarts',
-    version='0.1',
+    version='0.1.1',
     ext_modules=[Extension("_ikedarts", 
                            ["_ikedarts.c",
                             "ikedarts-c/ikedarts.cpp"
