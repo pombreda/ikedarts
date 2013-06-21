@@ -7,12 +7,14 @@ except ImportError:
 
 setup(
     name='ikedarts',
-    version='0.1.1',
+    version='0.1.2',
     ext_modules=[Extension("_ikedarts", 
                            ["_ikedarts.c",
-                            "ikedarts-c/ikedarts.cpp"
+                            "ikedarts-c/ikedarts.cpp",
+                            "ikedarts-c/ikedarts_main.cpp",
                             ])],
     include_dirs=["ikedarts-c"],
+    headers=["ikedarts-c/ikedarts.h"],
 
     #scripts = ["yoyodyne.py"],
     entry_points={"console_scripts": [ 'ikedarts=ikedarts:main' ]},

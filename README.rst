@@ -1,7 +1,7 @@
 ikedarts: python binding for DARTS, a dictionary-matching trie
 ==============================================================
 
-Python interface to DARTS by Kudo Taku.
+Python interface to DARTS by Kudo Taku. 
 http://chasen.org/~taku/software/darts/
 
 - installing

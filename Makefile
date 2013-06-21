@@ -29,6 +29,9 @@ _ikedarts.so:
 install: $(ve)
 	$(python) setup.py install
 
+sdist:
+	$(python) setup.py sdist
+
 develop:
 	$(python) setup.py develop
 
@@ -57,3 +60,9 @@ tt:
 p:
 	@echo $(python_version)
 	@echo $(CFLAGS)
+
+test-build: sdist
+	rm -fr tmp
+	mkdir -p tmp
+	cd tmp; tar xzf $(PWD)/dist/ikedarts-0.1.1.tar.gz
+	cd tmp/ikedarts*;  python setup.py build

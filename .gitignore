@@ -1,6 +1,8 @@
 *.pyc
 *.so
 build
+dist
+tmp
 *.save
 ve
 *.egg
