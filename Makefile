@@ -26,9 +26,6 @@ scrub: clean
 _ikedarts.so: 
 	$(python) setup.py build_ext --inplace
 
-install: $(ve)
-	$(python) setup.py install
-
 sdist:
 	$(python) setup.py sdist
 
@@ -38,11 +35,14 @@ develop:
 # install in a traditional unixy way, just laying out 
 # the files, instead of resorting to fragile, cutesy tricks
 # like eggs and pth.
-install2:
-	rm -fr install-root; mkdir install-root
+root=/
+install:
 	$(python) setup.py install \
-		--root=$(PWD)/install-root \
+		--root=$(root) \
 		--single-version-externally-managed
+
+install0: $(ve)
+	$(python) setup.py install
 
 test:
 	$(python) setup.py test
